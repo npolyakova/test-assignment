@@ -1,0 +1,209 @@
+body{
+  font-family: Inter;
+  background-color: #E2E3E4;
+  color: #303236;
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+  left: -11px;
+  background-color: #E0E4EB;
+  padding-right: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ABB0BA;
+  border-radius: 4px;
+}
+
+/*Шапка*/
+
+header{
+  background-color: white;
+  margin: -7px -7px 0px -7px;
+  height: 82px;
+}
+
+.header-wrapper{
+  padding: 16px 0px 19px 25px;
+}
+
+header h1{
+  font-size: 24px;
+  color: #18191B;
+  font-weight: 700;
+  margin: 0px;
+}
+
+header a{
+  font-size: 12px;
+  color: #61646B;
+  text-decoration: none;
+}
+
+/*Основная часть*/
+
+.wrapper{
+  padding-top: 20px;
+  max-width: 870px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 270px 3fr;
+}
+
+.block{
+  background-color: white;
+  border-radius: 4px;
+}
+
+.block h1{
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0px 0px 8px 0px;
+}
+
+.block p{
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0%;
+}
+
+icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+svg{
+  z-index: 1;
+  position: absolute;
+}
+
+h2{
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/*Блок с лого ПВЗ и общим кол-вом заказов*/
+
+.general-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 270px;
+  height: 270px;
+}
+
+.general-info p{
+  color: #ABB0BA;
+}
+
+.general-info .icon-bcground{
+  background: #ECEFF4;
+  border-radius: 50%;
+  height: 92px;
+  width: 92px;
+}
+
+.general-info icon{
+  padding-bottom: 24px;
+  padding-top: 47px;
+}
+
+/*Блок сканирования заказа*/
+
+.scanned{
+  height: 230px;
+  width: 570px;
+}
+
+.inline-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 23px 7px 23px;
+}
+
+.inline-header p{
+  color: #494B50;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.scan-block{
+  border-radius: 10px;
+  border: 1px solid #C4C9D4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  margin: 0px 23px 27px 23px;
+  padding: 0px 24px;
+}
+
+.scan-block p{
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.02em;
+  line-height: 150%;
+}
+
+.scan-block .icon-bcground{
+  background: #ECEFF4;
+  border-radius: 10px;
+  height: 62px;
+  width: 62px;
+}
+
+/*Блок с неотсканированными заказами*/
+
+.unscanned{
+  grid-column-start: 2;
+  margin-top: -20px;
+  max-height: 433px;
+  padding-bottom: 16px;
+  width: 570px;
+}
+
+.unscanned-items{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 338px;
+  width: 554px;
+  padding-right:6px;
+}
+
+.unscanned-item{
+  border-radius: 4px;
+  border: 1px solid #C4C9D4;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+  margin: 0px 6px 10px 23px;
+  padding: 0px 16px 0px 24px;
+}
+
+.unscanned-item p{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.unscanned-item icon{
+  justify-self: flex-end;
+}
+
+.unscanned-item .icon-bcground{
+  background: #C4C4C4;
+  border-radius: 4px;
+  height: 34px;
+  width: 34px;
+}
